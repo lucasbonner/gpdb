@@ -408,7 +408,7 @@ resources:
 - name: gpdb7-[[ os_type ]]-build
   type: registry-image
   source:
-    tag: latest
+    tag: dev
   {% if os_type == "rhel8" or os_type == "rhel9" %}
     repository: gcr.io/data-gpdb-private-images/gpdb7-[[ os_type ]]-build
     username: _json_key
@@ -429,7 +429,7 @@ resources:
 - name: gpdb7-[[ os_type ]]-test
   type: registry-image
   source:
-    tag: latest
+    tag: dev
 {% if os_type == "rhel8" or os_type == "rhel9" %}
     repository: gcr.io/data-gpdb-private-images/gpdb7-[[ os_type ]]-test
     username: _json_key

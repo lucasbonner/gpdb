@@ -379,14 +379,14 @@ resources:
 - name: gpdb7-rocky8-build
   type: registry-image
   source:
-    tag: latest
+    tag: dev
     repository: gcr.io/data-gpdb-public-images/gpdb7-rocky8-build
 
 
 - name: gpdb7-rocky8-test
   type: registry-image
   source:
-    tag: latest
+    tag: dev
     repository: gcr.io/data-gpdb-public-images/gpdb7-rocky8-test
 
 - name: bin_gpdb_icw_green
